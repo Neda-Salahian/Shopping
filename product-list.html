@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <!-- Icon -->
+    <script src="https://kit.fontawesome.com/849e030e4f.js" crossorigin="anonymous"></script>
+    
+    <title>Shopping</title>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <nav>
+            <div class="nav-phone-nummber">
+                <span> Phone Nummber : +2113000 </span>
+            </div>
+            <div class="nav-user">
+                <div class="nav-login">
+                    <a type="button" data-bs-toggle="modal" data-bs-target="#myModal">
+                        Login
+                    </a>
+                </div>
+                <div class="nav-register">
+                    <a href="#">Register</a>
+                </div>
+            </div>
+        </nav>
+        <section id="search">
+            <div class="navbar">
+                <div class="container-fluid">
+                  <a class="navbar-brand">Decora</a>
+                  <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success btn-color" type="submit">Search</button>
+                  </form>
+                  <div class="basket">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </div>
+                </div>
+            </div>
+        </section>
+        <div class="menu navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a href="index.html"><i class="fa-solid fa-house"></i></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Today's Deals</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Customer Service</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Best Sellers</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Gift Cards</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html" target="_blank">About Us</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </div>
+    </header>
+    <!-- main -->
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="line">
+                        <div class="category">
+                            <div class="cat-box">
+                                <div class="title">Candles List</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- product list -->
+        <section>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                  <div class="row">
+                     <!-- category list -->
+                    <div class="col-12 col-sm-12 col-md-3">
+                      <div id="mobile-filter">
+                          <div>
+                              <h5 class="font-weight-bold">Categories</h5>
+                              <div class="list-group">
+                                <button type="button" class="list-group-item list-group-item-action">
+                                  LED Candles
+                                </button>
+                                <button type="button" class="list-group-item list-group-item-action">Taper & stick candles</button>
+                                <button type="button" class="list-group-item list-group-item-action active">tea lights</button>
+                                <button type="button" class="list-group-item list-group-item-action">pillar candles</button>
+                                <button type="button" class="list-group-item list-group-item-action">scented candles</button>
+                              </div>
+                          </div>
+                          <div class="py-3">
+                              <h5 class="font-weight-bold">Brands</h5>
+                              <form class="brand">
+                                  <div class="form-inline d-flex align-items-center py-1"> <label class="tick">Royal Fields <input type="checkbox"> <span class="check"></span> </label> </div>
+                                  <div class="form-inline d-flex align-items-center py-1"> <label class="tick">Crasmas Fields <input type="checkbox" checked> <span class="check"></span> </label> </div>
+                                  <div class="form-inline d-flex align-items-center py-1"> <label class="tick">Vegetarisma Farm <input type="checkbox" checked> <span class="check"></span> </label> </div>
+                                  <div class="form-inline d-flex align-items-center py-1"> <label class="tick">Farmar Field Eve <input type="checkbox"> <span class="check"></span> </label> </div>
+                                  <div class="form-inline d-flex align-items-center py-1"> <label class="tick">True Farmar Steve <input type="checkbox"> <span class="check"></span> </label> </div>
+                              </form>
+                          </div>
+                          <div class="py-3">
+                              <h5 class="font-weight-bold">Rating</h5>
+                              <form class="rating">
+                                  <div class="form-inline d-flex align-items-center py-2"> <label class="tick"><span class="fas fa-star"></span> <span class="fas fa-star"></span> <span class="fas fa-star"></span> <span class="fas fa-star"></span> <span class="fas fa-star"></span> <input type="checkbox"> <span class="check"></span> </label> </div>
+                                  <div class="form-inline d-flex align-items-center py-2"> <label class="tick"> <span class="fas fa-star"></span> <span class="fas fa-star"></span> <span class="fas fa-star"></span> <span class="fas fa-star"></span> <span class="far fa-star px-1 text-muted"></span> <input type="checkbox"> <span class="check"></span> </label> </div>
+                                  <div class="form-inline d-flex align-items-center py-2"> <label class="tick"><span class="fas fa-star"></span> <span class="fas fa-star"></span> <span class="fas fa-star"></span> <span class="far fa-star px-1 text-muted"></span> <span class="far fa-star px-1 text-muted"></span> <input type="checkbox"> <span class="check"></span> </label> </div>
+                                  <div class="form-inline d-flex align-items-center py-2"> <label class="tick"><span class="fas fa-star"></span> <span class="fas fa-star"></span> <span class="far fa-star px-1 text-muted"></span> <span class="far fa-star px-1 text-muted"></span> <span class="far fa-star px-1 text-muted"></span> <input type="checkbox"> <span class="check"></span> </label> </div>
+                                  <div class="form-inline d-flex align-items-center py-2"> <label class="tick"> <span class="fas fa-star"></span> <span class="far fa-star px-1 text-muted"></span> <span class="far fa-star px-1 text-muted"></span> <span class="far fa-star px-1 text-muted"></span> <span class="far fa-star px-1 text-muted"></span> <input type="checkbox"> <span class="check"></span> </label> </div>
+                              </form>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-9 ">
+                      <div class="row g-4">
+                          <div class="col-lg-3 col-md-6 col-sm-12">
+                              <div class="card">
+                                <div class="image-container">
+                                  <img src="img/candle-1.jpg" class="card-img-top img-fluid" alt="...">
+                                  <a href="product-show.html">
+                                      <span class="gotoProduct">
+                                          <h2 class="gotoProductTitle mt-2">Aesthetic peony candles</h2>
+                                      </span>
+                                  </a>
+                                </div>
+                              </div>
+                          </div>
+                          <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="card">
+                              <div class="image-container">
+                                <img src="img/candle-2.jpg" class="card-img-top img-fluid" alt="...">
+                                <a href="product-show.html">
+                                    <span class="gotoProduct">
+                                        <h2 class="gotoProductTitle mt-2">Pillar candle rhombus</h2>
+                                    </span>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="card">
+                              <div class="image-container">
+                                <img src="img/candle-3.jpg" class="card-img-top img-fluid" alt="...">
+                                <a href="">
+                                    <span class="gotoProduct">
+                                        <h2 class="gotoProductTitle mt-2">Pillar Candle Rustic Silver Glitter</h2>
+                                    </span>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="card">
+                              <div class="image-container">
+                                <img src="img/candle-4.jpg" class="card-img-top img-fluid" alt="...">
+                                <a href="">
+                                    <span class="gotoProduct">
+                                        <h2 class="gotoProductTitle mt-2">Candle Happy Birthday</h2>
+                                    </span>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="card">
+                              <div class="image-container">
+                                <img src="img/recommend-1.jpg" class="card-img-top img-fluid" alt="...">
+                                <a href="">
+                                    <span class="gotoProduct">
+                                        <h2 class="gotoProductTitle mt-2">Home scented candle</h2>
+                                    </span>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="card">
+                              <div class="image-container">
+                                <img src="img/recommend-2.jpg" class="card-img-top img-fluid" alt="...">
+                                <a href="">
+                                    <span class="gotoProduct">
+                                        <h2 class="gotoProductTitle mt-2">Scented candle Creamy Vanilla</h2>
+                                    </span>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="card">
+                              <div class="image-container">
+                                <img src="img/recommend-3.jpg" class="card-img-top img-fluid" alt="...">
+                                <a href="">
+                                    <span class="gotoProduct">
+                                        <h2 class="gotoProductTitle mt-2">Flavor Wax Hearts</h2>
+                                    </span>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="card">
+                              <div class="image-container">
+                                <img src="img/recommend-3.jpg" class="card-img-top img-fluid" alt="...">
+                                <a href="">
+                                    <span class="gotoProduct">
+                                        <h2 class="gotoProductTitle mt-2">LED candle bubble</h2>
+                                    </span>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="card">
+                              <div class="image-container">
+                                <img src="img/recommend-4.jpg" class="card-img-top img-fluid" alt="...">
+                                <a href="">
+                                    <span class="gotoProduct">
+                                        <h2 class="gotoProductTitle mt-2">LED candle bubble</h2>
+                                    </span>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="card">
+                              <div class="image-container">
+                                <img src="img/recommend-1.jpg" class="card-img-top img-fluid" alt="...">
+                                <a href="">
+                                    <span class="gotoProduct">
+                                        <h2 class="gotoProductTitle mt-2">LED candle</h2>
+                                    </span>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="card">
+                              <div class="image-container">
+                                <img src="img/recommend-2.jpg" class="card-img-top img-fluid" alt="...">
+                                <a href="">
+                                    <span class="gotoProduct">
+                                        <h2 class="gotoProductTitle mt-2">Tea lights Night Lights</h2>
+                                    </span>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="card">
+                              <div class="image-container">
+                                <img src="img/recommend-3.jpg" class="card-img-top img-fluid" alt="...">
+                                <a href="">
+                                    <span class="gotoProduct">
+                                        <h2 class="gotoProductTitle mt-2">Twisted taper candles</h2>
+                                    </span>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+  
+                      <!-- pagination -->
+  
+                      <nav aria-label="Page navigation example">
+                        <ul class="pagination mt-3 float-end">
+                          <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                          <li class="page-item"><a class="page-link" href="#">1</a></li>
+                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                        </ul>
+                      </nav>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+
+
+        
+
+        <!-- Start Modal Login HTML -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Login</h5>     
+                </div>
+                <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <button type="submit" class="btn btn-color">Login</button>
+                </form>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- End Modal Login HTML -->
+
+    </main>
+    <!-- footer -->
+    <footer class="mt-4">
+        <div class="container">
+            <div class="row foot">
+                <div class="col-12 foot-child">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-12 fast-link">
+                          <h3>Fast Links</h3>
+                          <ul>
+                              <li><a href="">Blogs</a></li>
+                              <li><a href="">Gift Cards</a></li>
+                              <li><a href="">Best Seller</a></li>
+                              <li><a href="">Customer Service</a></li>
+                          </ul>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 contact-us">
+                            <h3>Contact Us</h3>
+                            <ul>
+                                <li><i class="fa-solid fa-phone"></i>+2113000</li>
+                                <li><i class="fa-solid fa-envelope"></i><a href="mailto:Accessory-home@info.com">Accessory-home@info.com</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 social">
+                            <h3>Social Network</h3>
+                            <ul>
+                                <li><i class="fa-brands fa-instagram"></i></li>
+                                <li><i class="fa-brands fa-youtube"></i></li>
+                                <li><i class="fa-brands fa-facebook"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="copy mt-3">
+                        <p>© 2023 All rights reserved</p>
+                       <strong>
+                             <a class="" href="http://irandesign.ir/" target="_blank" title="Home Accessory">
+                                 Made with <i class="fa-solid fa-heart"></i> by Neda Salahian
+                             </a>
+                       </strong>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+    <!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script>
+       $('#myList a').on('click', function (e) {
+        e.preventDefault()
+        $(this).tab('show')
+        })
+
+    
+    </script>
+
+</body>
+</html>

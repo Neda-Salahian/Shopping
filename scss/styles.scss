@@ -60,10 +60,17 @@ header {
         }
         @include flex (flex,row,space-between);
         .nav-user{
-            @include flex (flex,row,space-between);
+            .nav-login {
+                a{
+                    @include a-link(none, $color-back-grey);
+                }
+            }
             a{
                 @include a-link(none, $color-back-grey);
             }
+            
+            @include flex (flex,row,space-between);
+            
             .nav-login a::before{
                 @include icon ("\f2f6","Font Awesome 5 Free",900,0rem,0.5rem);
             }
@@ -106,13 +113,6 @@ header {
     
 }
 main {
-    // div#carouselExampleCaptions {
-    //     width: 80%;
-    //     // position: absolute;
-    //     top: 34%;
-    //     left: 50%;
-    //     // transform: translate(-50%, 5%);
-    // }
     .carousel-item img {
         border-radius: 25px;
     }
@@ -120,10 +120,22 @@ main {
     .card {
         position: relative;
         overflow: hidden;
+        .img-cat {
+            .card-img-top {
+                min-height: 200px; 
+                width: auto; 
+                display: block; 
+                margin: 0 auto; 
+            }
+        }
+        
       }
       
-      .image-container {
+      .img-index {
         position: relative;
+        .card-img-top {
+            height: 347px;
+        }
       }
       
       .card-body-overlay {
@@ -171,6 +183,7 @@ main {
             transform: translateX(-50%);
             white-space: nowrap;
             color: #484848;
+            top: -10%;
         }
         span.gotoProduct:hover {
             background: $color-primary;
@@ -180,7 +193,7 @@ main {
             display: flex;
             justify-content: left;
             align-items: center;
-            height: 30vh;
+            height: 100px;
             position: relative;
             .cat-box {
                 background-color: #ffffff;
@@ -201,7 +214,6 @@ main {
             display: flex;
             justify-content: left;
             align-items: center;
-            height: 30vh;
             position: relative;
         }
         .line:before {
@@ -216,13 +228,65 @@ main {
         .carousel-inner {
             margin-top: 5%;
         }
+        .btn-color {
+            background-color: $color-primary;
+            color: #ffffff;
+        }
+        .btn-color:hover {
+            background-color: $color-primary;
+            color: #ffffff;
+        }
+
+        // product list
+
+        .rating{
+            color: #ffbb00;
+            padding: 0px 3px;
+        }
+
+        .category {
+            font-size: 0.9rem;
+            cursor: pointer;
+        }
+
+        .tick input {
+            float:left;
+            margin-right:5px;
+            margin-top:5px;
+        }
+        .list-group-item.active{
+            background-color: $color-primary;
+            border-color: $color-primary;
+        }
+        .page-link {
+            position: relative;
+            display: block;
+            padding: var(--bs-pagination-padding-y) var(--bs-pagination-padding-x);
+            font-size: var(--bs-pagination-font-size);
+            color: $color-primary;
+            text-decoration: none;
+            background-color: var(--bs-pagination-bg);
+            border: var(--bs-pagination-border-width) solid var(--bs-pagination-border-color);
+            transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        }
+
+        // about us
+
+        .black-text-color{
+            color: $color-primary;
+        }
+
+        // product show 
+
+        .nav-link{
+            color: $color-primary;
+        }
+        
 }
 
 footer {
     .foot .foot-child{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+        
         margin-top: 3%;
         h3{
             margin-left: 30px;

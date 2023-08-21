@@ -35,6 +35,10 @@ header nav .nav-user {
   flex-direction: row;
   justify-content: space-between;
 }
+header nav .nav-user .nav-login a {
+  text-decoration: none;
+  color: #727272;
+}
 header nav .nav-user a {
   text-decoration: none;
   color: #727272;
@@ -93,8 +97,17 @@ main .card {
   position: relative;
   overflow: hidden;
 }
-main .image-container {
+main .card .img-cat .card-img-top {
+  min-height: 200px;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+}
+main .img-index {
   position: relative;
+}
+main .img-index .card-img-top {
+  height: 347px;
 }
 main .card-body-overlay {
   position: absolute;
@@ -138,6 +151,7 @@ main span.gotoProduct {
   transform: translateX(-50%);
   white-space: nowrap;
   color: #484848;
+  top: -10%;
 }
 main span.gotoProduct:hover {
   background: #1A516F;
@@ -147,7 +161,7 @@ main .category {
   display: flex;
   justify-content: left;
   align-items: center;
-  height: 30vh;
+  height: 100px;
   position: relative;
 }
 main .category .cat-box {
@@ -166,7 +180,6 @@ main .line {
   display: flex;
   justify-content: left;
   align-items: center;
-  height: 30vh;
   position: relative;
 }
 main .line:before {
@@ -181,6 +194,48 @@ main .line:before {
 main .carousel-inner {
   margin-top: 5%;
 }
+main .btn-color {
+  background-color: #1A516F;
+  color: #ffffff;
+}
+main .btn-color:hover {
+  background-color: #1A516F;
+  color: #ffffff;
+}
+main .rating {
+  color: #ffbb00;
+  padding: 0px 3px;
+}
+main .category {
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+main .tick input {
+  float: left;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+main .list-group-item.active {
+  background-color: #1A516F;
+  border-color: #1A516F;
+}
+main .page-link {
+  position: relative;
+  display: block;
+  padding: var(--bs-pagination-padding-y) var(--bs-pagination-padding-x);
+  font-size: var(--bs-pagination-font-size);
+  color: #1A516F;
+  text-decoration: none;
+  background-color: var(--bs-pagination-bg);
+  border: var(--bs-pagination-border-width) solid var(--bs-pagination-border-color);
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+main .black-text-color {
+  color: #1A516F;
+}
+main .nav-link {
+  color: #1A516F;
+}
 
 footer {
   background-color: #1A516F;
@@ -188,9 +243,6 @@ footer {
   height: 250px;
 }
 footer .foot .foot-child {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
   margin-top: 3%;
 }
 footer .foot .foot-child h3 {

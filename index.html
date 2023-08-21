@@ -25,7 +25,9 @@
             </div>
             <div class="nav-user">
                 <div class="nav-login">
-                    <a href="#">Login</a>
+                    <a type="button" data-bs-toggle="modal" data-bs-target="#myModal">
+                        Login
+                    </a>
                 </div>
                 <div class="nav-register">
                     <a href="#">Register</a>
@@ -35,7 +37,7 @@
         <section id="search">
             <div class="navbar">
                 <div class="container-fluid">
-                  <a class="navbar-brand">Decora</a>
+                  <a class="navbar-brand" href="index.html">Decora</a>
                   <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success btn-color" type="submit">Search</button>
@@ -48,7 +50,7 @@
         </section>
         <div class="menu navbar navbar-expand-lg">
             <div class="container-fluid">
-              <a href=""><i class="fa-solid fa-house"></i></a>
+              <a href="index.html"><i class="fa-solid fa-house"></i></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -67,7 +69,7 @@
                     <a class="nav-link" href="#">Gift Cards</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Blogs</a>
+                    <a class="nav-link" href="about.html" target="_blank">About Us</a>
                   </li>
                 </ul>
               </div>
@@ -85,21 +87,21 @@
                 </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="/Shopping/img/htdocs.jpeg" class="d-block w-100" alt="...">
+                    <img src="/Shopping/img/slide-2.jpg" class="d-block w-100 " alt="...">
                     <div class="carousel-caption d-none d-md-block">
                       <h5>First slide label</h5>
                       <p>Some representative placeholder content for the first slide.</p>
                     </div>
                   </div>
                   <div class="carousel-item">
-                    <img src="/Shopping/img/htdocs.jpeg" class="d-block w-100" alt="...">
+                    <img src="/Shopping/img/slide-3.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                       <h5>Second slide label</h5>
                       <p>Some representative placeholder content for the second slide.</p>
                     </div>
                   </div>
                   <div class="carousel-item">
-                    <img src="/Shopping/img/htdocs.jpeg" class="d-block w-100" alt="...">
+                    <img src="/Shopping/img/slide-1.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                       <h5>Third slide label</h5>
                       <p>Some representative placeholder content for the third slide.</p>
@@ -116,7 +118,7 @@
                 </button>
             </div>
         </div>
-        
+        <!-- Start Categories Section -->
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12">
@@ -133,129 +135,145 @@
         <section>
             <div class="container">
                 <div class="row row-cols-1 row-cols-md-2 g-4">
-                    <div class="col-lg-3 col-md-4 col-sm-12">
+                    <div class="col-lg-2 col-md-4 col-sm-12">
                         <div class="card">
-                          <div class="image-container">
-                            <img src="img/T180208-min.jpeg" class="card-img-top" alt="...">
-                            <div class="card-body-overlay">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            </div>
-                            <a href="">
+                          <div class="image-container img-cat">
+                            <img src="img/cat-candle.jpg" class="card-img-top img-fluid" alt="Candles">
+                            <a href="product-list.html">
                                 <span class="gotoProduct">
-                                    <h2 class="gotoProductTitle mt-2">Children Category</h2>
+                                    Candles
                                 </span>
                             </a>
                           </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-12">
+                    <div class="col-lg-2 col-md-4 col-sm-12">
                         <div class="card">
-                          <div class="image-container">
-                            <img src="img/stock-photo-mock-up-poster-frame-in-modern-interior-background-bohemian-living-room-scandinavian-style-d-1195340230-min.jpeg" class="card-img-top" alt="...">
-                            <div class="card-body-overlay">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            </div>
+                          <div class="image-container img-cat">
+                            <img src="img/cat-cups.jpg" class="card-img-top img-fluid" alt="Cups and Mugs">
                             <a href="">
                                 <span class="gotoProduct">
-                                    <h2 class="gotoProductTitle mt-2">Children Category</h2>
+                                    Cups and Mugs
                                 </span>
                             </a>
                           </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-12">
+                    <div class="col-lg-2 col-md-4 col-sm-12">
                         <div class="card">
-                          <div class="image-container">
-                            <img src="img/stock-photo-mock-up-poster-frame-in-modern-interior-background-living-room-scandinavian-style-d-render-d-1200632446-min.jpeg" class="card-img-top" alt="...">
-                            <div class="card-body-overlay">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            </div>
+                          <div class="image-container img-cat">
+                            <img src="img/cat-autumn-lighting.jpg" class="card-img-top img-fluid" alt="autumn lighting">
                             <a href="">
                                 <span class="gotoProduct">
-                                    <h2 class="gotoProductTitle mt-2">Children Category</h2>
+                                    autumn lighting
                                 </span>
                             </a>
                           </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-12">
+                    <div class="col-lg-2 col-md-4 col-sm-12">
                         <div class="card">
-                          <div class="image-container">
-                            <img src="img/T19011-min.jpeg" class="card-img-top" alt="...">
-                            <div class="card-body-overlay">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            </div>
+                          <div class="image-container img-cat">
+                            <img src="img/cat-autumn-pillow.jpg" class="card-img-top img-fluid" alt="cat-Lanterns-Autumn">
                             <a href="">
                                 <span class="gotoProduct">
-                                    <h2 class="gotoProductTitle mt-2">Children Category</h2>
+                                    Lanterns Autumn
                                 </span>
                             </a>
                           </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-12">
+                    <div class="col-lg-2 col-md-4 col-sm-12">
                         <div class="card">
-                          <div class="image-container">
-                            <img src="img/T19011-min.jpeg" class="card-img-top" alt="...">
-                            <div class="card-body-overlay">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            </div>
+                          <div class="image-container img-cat">
+                            <img src="img/cat-Pumpkin-decoration.jpg" class="card-img-top img-fluid" alt="cat-Pumpkin-decoration">
                             <a href="">
                                 <span class="gotoProduct">
-                                    <h2 class="gotoProductTitle mt-2">Children Category</h2>
+                                    Pumpkin decoration
                                 </span>
                             </a>
                           </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-12">
+                    <div class="col-lg-2 col-md-4 col-sm-12">
                         <div class="card">
-                          <div class="image-container">
-                            <img src="img/stock-photo-mock-up-poster-frame-in-modern-interior-background-living-room-scandinavian-style-d-render-d-1200632446-min.jpeg" class="card-img-top" alt="...">
-                            <div class="card-body-overlay">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            </div>
+                          <div class="image-container img-cat">
+                            <img src="img/cat-autumn-pillow.jpg" class="card-img-top img-fluid" alt="autumn pillow">
                             <a href="">
                                 <span class="gotoProduct">
-                                    <h2 class="gotoProductTitle mt-2">Children Category</h2>
+                                    autumn pillow
                                 </span>
                             </a>
                           </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-12">
+                    <div class="col-lg-2 col-md-4 col-sm-12">
                         <div class="card">
-                          <div class="image-container">
-                            <img src="img/T180208-min.jpeg" class="card-img-top" alt="...">
-                            <div class="card-body-overlay">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            </div>
+                          <div class="image-container img-cat">
+                            <img src="img/cat-animal-lovers.jpg" class="card-img-top img-fluid" alt="animal lovers">
                             <a href="">
                                 <span class="gotoProduct">
-                                    <h2 class="gotoProductTitle mt-2">Children Category</h2>
+                                    animal lovers
                                 </span>
                             </a>
                           </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-12">
+                    <div class="col-lg-2 col-md-4 col-sm-12">
                         <div class="card">
-                          <div class="image-container">
-                            <img src="img/stock-photo-mock-up-poster-frame-in-modern-interior-background-bohemian-living-room-scandinavian-style-d-1195340230-min.jpeg" class="card-img-top" alt="...">
-                            <div class="card-body-overlay">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            </div>
+                          <div class="image-container img-cat">
+                            <img src="img/cat-picture-frame.jpg" class="card-img-top img-fluid" alt="Picture frame">
                             <a href="">
                                 <span class="gotoProduct">
-                                    <h2 class="gotoProductTitle mt-2">Children Category</h2>
+                                    Picture frame
+                                </span>
+                            </a>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-12">
+                        <div class="card">
+                          <div class="image-container img-cat">
+                            <img src="img/cat-carpet.jpg" class="card-img-top img-fluid" alt="Carpet">
+                            <a href="">
+                                <span class="gotoProduct">
+                                    Carpet
+                                </span>
+                            </a>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-12">
+                        <div class="card">
+                          <div class="image-container img-cat">
+                            <img src="img/cat-Trays-&-Bowls.jpg" class="card-img-top img-fluid" alt="Trays & Bowls">
+                            <a href="">
+                                <span class="gotoProduct">
+                                    Trays & Bowls
+                                </span>
+                            </a>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-12">
+                        <div class="card">
+                          <div class="image-container img-cat">
+                            <img src="img/cat-plants-and-pots.jpg" class="card-img-top img-fluid" alt="Plants & pots">
+                            <a href="">
+                                <span class="gotoProduct">
+                                    Plants & pots
+                                </span>
+                            </a>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-12">
+                        <div class="card">
+                          <div class="image-container img-cat">
+                            <img src="img/cat-Flowers.jpg" class="card-img-top img-fluid" alt="Flowers">
+                            <a href="">
+                                <span class="gotoProduct">
+                                    Flowers
                                 </span>
                             </a>
                           </div>
@@ -264,8 +282,10 @@
                 </div>
             </div>
         </section>
-        <!-- Section Best Seller -->
-        <div class="container">
+        <!-- Start Categories Section -->
+
+        <!-- Start Best Seller Section -->
+        <div class="container" id="bestseller">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12">
                     <div class="line">
@@ -284,8 +304,24 @@
                 <div class="row row-cols-1 row-cols-md-2 g-4">
                     <div class="col-lg-3 col-md-4 col-sm-12">
                         <div class="card">
-                          <div class="image-container">
-                            <img src="img/p-1.jpeg" class="card-img-top" alt="...">
+                          <div class="image-container img-index">
+                            <img src="img/recommend-3.jpg" class="card-img-top img-fluid" alt="...">
+                            <div class="card-body-overlay">
+                              <h5 class="card-title">Aesthetic peony candles</h5>
+                              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                            <a href="product-show.html">
+                                <span class="gotoProduct">
+                                    <h2 class="gotoProductTitle mt-2">Aesthetic peony candles</h2>
+                                </span>
+                            </a>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-12">
+                        <div class="card">
+                          <div class="image-container img-index">
+                            <img src="img/product-1.jpg" class="card-img-top img-fluid" alt="...">
                             <div class="card-body-overlay">
                               <h5 class="card-title">Card title</h5>
                               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -300,8 +336,8 @@
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-12">
                         <div class="card">
-                          <div class="image-container">
-                            <img src="img/p-2.jpeg" class="card-img-top" alt="...">
+                          <div class="image-container img-index">
+                            <img src="img/product-3.jpg" class="card-img-top img-fluid" alt="...">
                             <div class="card-body-overlay">
                               <h5 class="card-title">Card title</h5>
                               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -316,8 +352,8 @@
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-12">
                         <div class="card">
-                          <div class="image-container">
-                            <img src="img/p-3.jpeg" class="card-img-top" alt="...">
+                          <div class="image-container img-index">
+                            <img src="img/product-4.jpg" class="card-img-top img-fluid" alt="...">
                             <div class="card-body-overlay">
                               <h5 class="card-title">Card title</h5>
                               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -332,8 +368,8 @@
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-12">
                         <div class="card">
-                          <div class="image-container">
-                            <img src="img/p-4.jpeg" class="card-img-top" alt="...">
+                          <div class="image-container img-index">
+                            <img src="img/product-5.jpg" class="card-img-top img-fluid" alt="...">
                             <div class="card-body-overlay">
                               <h5 class="card-title">Card title</h5>
                               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -348,8 +384,8 @@
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-12">
                         <div class="card">
-                          <div class="image-container">
-                            <img src="img/p-3.jpeg" class="card-img-top" alt="...">
+                          <div class="image-container img-index">
+                            <img src="img/product-6.jpg" class="card-img-top img-fluid" alt="...">
                             <div class="card-body-overlay">
                               <h5 class="card-title">Card title</h5>
                               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -364,8 +400,8 @@
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-12">
                         <div class="card">
-                          <div class="image-container">
-                            <img src="img/p-1.jpeg" alt="...">
+                          <div class="image-container img-index">
+                            <img src="img/product-7.jpg" class="card-img-top img-fluid" alt="...">
                             <div class="card-body-overlay">
                               <h5 class="card-title">Card title</h5>
                               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -380,24 +416,8 @@
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-12">
                         <div class="card">
-                          <div class="image-container">
-                            <img src="img/p-4.jpeg" class="card-img-top" alt="...">
-                            <div class="card-body-overlay">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            </div>
-                            <a href="">
-                                <span class="gotoProduct">
-                                    <h2 class="gotoProductTitle mt-2">Children Category</h2>
-                                </span>
-                            </a>
-                          </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-12">
-                        <div class="card">
-                          <div class="image-container">
-                            <img src="img/p-2.jpeg" class="card-img-top" alt="...">
+                          <div class="image-container img-index">
+                            <img src="img/product-8.jpg" class="card-img-top img-fluid" alt="...">
                             <div class="card-body-overlay">
                               <h5 class="card-title">Card title</h5>
                               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -413,35 +433,63 @@
                 </div>
             </div>
         </section>
+
+        <!-- Start Modal Login HTML -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Login</h5>     
+                </div>
+                <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <button type="submit" class="btn btn-color">Login</button>
+                </form>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- End Modal Login HTML -->
+
     </main>
     <!-- footer -->
-    <footer>
+    <footer class="mt-4">
         <div class="container">
             <div class="row foot">
                 <div class="col-12 foot-child">
-                    <div class="col-lg-4 col-md-4 col-sm-12 fast-link">
-                        <h3>Fast Links</h3>
-                        <ul>
-                            <li><a href="">Blogs</a></li>
-                            <li><a href="">Gift Cards</a></li>
-                            <li><a href="">Best Seller</a></li>
-                            <li><a href="">Customer Service</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12 contact-us">
-                        <h3>Contact Us</h3>
-                        <ul>
-                            <li><i class="fa-solid fa-phone"></i>+2113000</li>
-                            <li><i class="fa-solid fa-envelope"></i><a href="mailto:Accessory-home@info.com">Accessory-home@info.com</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12 social">
-                        <h3>Social Network</h3>
-                        <ul>
-                            <li><i class="fa-brands fa-instagram"></i></li>
-                            <li><i class="fa-brands fa-youtube"></i></li>
-                            <li><i class="fa-brands fa-facebook"></i></li>
-                        </ul>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-12 fast-link">
+                          <h3>Fast Links</h3>
+                          <ul>
+                              <li><a href="">Blogs</a></li>
+                              <li><a href="">Gift Cards</a></li>
+                              <li><a href="">Best Seller</a></li>
+                              <li><a href="">Customer Service</a></li>
+                          </ul>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 contact-us">
+                            <h3>Contact Us</h3>
+                            <ul>
+                                <li><i class="fa-solid fa-phone"></i>+2113000</li>
+                                <li><i class="fa-solid fa-envelope"></i><a href="mailto:Accessory-home@info.com">Accessory-home@info.com</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 social">
+                            <h3>Social Network</h3>
+                            <ul>
+                                <li><i class="fa-brands fa-instagram"></i></li>
+                                <li><i class="fa-brands fa-youtube"></i></li>
+                                <li><i class="fa-brands fa-facebook"></i></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -464,7 +512,17 @@
     
 
     <!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script>
+       $('#myList a').on('click', function (e) {
+        e.preventDefault()
+        $(this).tab('show')
+        })
+
+    
+    </script>
 
 </body>
 </html>
