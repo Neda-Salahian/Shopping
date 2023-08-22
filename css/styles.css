@@ -89,6 +89,9 @@ header #search .btn-color {
   --bs-btn-color: $color-primary;
   border: 2px solid #1A516F;
 }
+header #search .basket a {
+  color: #1A516F;
+}
 
 main .carousel-item img {
   border-radius: 25px;
