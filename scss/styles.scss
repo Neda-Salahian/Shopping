@@ -134,7 +134,10 @@ main {
       .img-index {
         position: relative;
         .card-img-top {
-            height: 347px;
+            min-height: 369px;
+            width: auto;
+            display: block;
+            margin: 0 auto;
         }
       }
       
@@ -294,7 +297,7 @@ footer {
     }
     background-color: #1A516F;
     color: #ffffff;
-    height: 250px;
+    // height: 250px;
     .fast-link{
         ul li a{
             @include a-link(none,#ffffff);
@@ -345,7 +348,7 @@ footer {
         color: #000000;
           }
           a{
-            @include a-link(none,$color-primary );
+            @include a-link(none,#ffffff );
           }
     }
 

@@ -107,7 +107,10 @@ main .img-index {
   position: relative;
 }
 main .img-index .card-img-top {
-  height: 347px;
+  min-height: 369px;
+  width: auto;
+  display: block;
+  margin: 0 auto;
 }
 main .card-body-overlay {
   position: absolute;
@@ -240,7 +243,6 @@ main .nav-link {
 footer {
   background-color: #1A516F;
   color: #ffffff;
-  height: 250px;
 }
 footer .foot .foot-child {
   margin-top: 3%;
@@ -295,7 +297,7 @@ footer .copy p {
 }
 footer .copy a {
   text-decoration: none;
-  color: #1A516F;
+  color: #ffffff;
 }
 @keyframes shake {
   0%, 100% {
